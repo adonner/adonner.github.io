@@ -28,7 +28,7 @@ figure {
 	font-size: .8em;
 	color: #2D2A32;
 }
-.hero {
+.headshot {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -76,11 +76,10 @@ figure {
 	color: #2D2A32;
 }
 
-figure.familymarket{
+img.familypark{
 	float: right;
 	margin-left: 10px;
 	margin-bottom: 20px;
-	text-align: center;
 }
 .family {
 	font-family: 'EB Garamond', Verdana, Arial, sans-serif;
@@ -105,9 +104,9 @@ figure.airplane {
 	text-align: center;
 }
 
-figure.ptosign {
-	margin: 0px;
-	text-align: center;	
+img.b29pic{
+	float: left;
+	margin-right: 10px;
 }
 	
 .hobby {
