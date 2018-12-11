@@ -1,24 +1,39 @@
-
-.container {
-	margin:0 auto; /* Centered Content */
-     width:960px; /*sets width of content*/
+html {
+  scroll-behavior: smooth; /* Smooth scrolling when clicking on links - Only works in Chrome and Firefox */
 }
 
-body {
-	background-color: #FFFFFF;
+body{
+	margin:0 auto; /* Centered Content */
+    width:960px; /*sets width of content*/
+    background-color: #FFFFFF;
 	font-size: 1.25em; /*Major Thirds Type Scale*/
 }
-hr {
-	clear: both;
-	border-color: #090446;
-	background-color: #0A2239;
+
+header {
+	font-family: 'Oswald', Verdana, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+	border-bottom: 1px solid rgb(10,34,57); /* top and bottom boarder only */
+	border-top: 1px solid rgb(10,34,57);
+	padding-left: .25em;
+	padding-right: .25em;
 }
+
+h1 {
+	font-family: 'Oswald', Verdana, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+	font-size: 2.441em; /*Major Thirds Type Scale*/
+	color: #2D2A32;
+}
+
 
 p {
 	font-family: 'EB Garamond', Verdana, Arial, sans-serif;
 	font-weight: 400;
 	line-height: 1.5;
 	color: #2D2A32;
+	column-count: 1; /* ensures no text flows under images */
 }
 
 figure {
@@ -28,6 +43,20 @@ figure {
 	font-size: .8em;
 	color: #2D2A32;
 }
+
+hr {
+	clear: both;
+	border-color: #090446;
+	background-color: #0A2239;
+}
+
+
+.head { /* evenly spaces links across header */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .hero {
     display: block;
     margin-left: auto;
@@ -36,18 +65,16 @@ figure {
 }
 .name {
 	font-family: 'Oswald', Verdana, Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.5em;
-	font-size: 3.052em;
+	font-size: 3.815em; /* major thirds type scale */
 	text-align: center;
 	color: #0A2239;
-}
-.name {
-  overflow: hidden;
-  text-align: center;
+	overflow: hidden;
+	text-align: center;
 }
 
-.name:before,
+.name:before, /* draw line both sides of name */
 .name:after {
   background-color: #B24C63;
   content: "";
@@ -58,65 +85,51 @@ figure {
   width: 50%;
 }
 
-.name:before {
+.name:before { /* establishes left side of bar with .5em space between name and bar */
   right: 0.5em;
   margin-left: -50%;
 }
 
-.name:after {
+.name:after { /* establishes right side of bar with .5em space between name and bar */
   left: 0.5em;
   margin-right: -50%;
 }
 
-.about {
-	font-family: 'Oswald', Verdana, Arial, sans-serif;
-	font-weight: 300;
-	line-height: 1.5em;
-	font-size: 2.441em; /*Major Thirds Type Scale*/
-	color: #2D2A32;
-}
+
 
 figure.familymarket{
 	float: right;
 	margin-left: 10px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-.family {
-	font-family: 'EB Garamond', Verdana, Arial, sans-serif;
-	font-weight: 400;
-	text-align: center;
-	line-height: 1.5;
-	color: #2D2A32;
+	margin-right: 0px;
+	margin-bottom: 20px; /*allows spacing between image and hr*/
+	text-align: center; /* aligns image captions */
 }
 
-.givingback {
-	font-family: 'Oswald', Verdana, Arial, sans-serif;
-	font-weight: 300;
-	line-height: 1.5em;
-	font-size: 2.441em; /*Major Thirds Type Scale*/
-	color: #2D2A32;
-
+.abouttop {
+	float: left;
 }
+
 
 figure.airplane {
 	float: left;
-	margin-left: 10px;
+	margin-left: 0px;
 	text-align: center;
+}
+
+.quote {
+	clear: both;
+	text-align: center;
+}
+
+.volunteertop {
+	float: right;
+	padding-bottom: 1em; /* allows for spacing between back to top link and PTO image */
 }
 
 figure.ptosign {
 	margin: 0px;
-	text-align: center;	
+	text-align: center;
 }
-	
-.hobby {
-	font-family: 'Oswald', Verdana, Arial, sans-serif;
-	font-weight: 300;
-	line-height: 1.5em;
-	font-size: 2.441em; /*Major Thirds Type Scale*/
-	color: #2D2A32;
-}	
 
 /*img.swissflag{
 	float: right;
@@ -127,10 +140,12 @@ figure.ptosign {
 figure.flag {
 	float: right;
 	margin-right: 10px;
-	margin-bottom: 20px;
-	text-align: center
+	margin-bottom: 20px; /* allows for spacing between image and hr */
+	text-align: center /* centers image caption */
 }
-	
+.hobbiestop {
+	float: left;
+}
 
 address {
 	font-family: 'Quattrocento', Georgia, "Times New Roman", serif;
@@ -138,21 +153,26 @@ address {
 	padding-bottom: .5em; /*adds .5em space below address*/
 }
 
-.career {
-	font-family: 'Oswald', Verdana, Arial, sans-serif;
-	font-weight: 300;
-	line-height: 1.5em;
-	font-size: 2.441em; /*Major Thirds Type Scale*/
-	color: #2D2A32;
-}
 a {
-	text-decoration: none;
+	text-decoration: none; /* removes underline from links */
 	color: #B24C63;
 }
 
 figure.demo {
 	float: left;
 	margin-left: 10px;
-	margin-bottom: 20px;
 	text-align: center;
+}
+.careertop {
+	float: right;
+	padding-bottom: 1em; /* adds padding between back to top link and footer */
+}
+
+footer {
+	clear: both;
+	font-family: 'Oswald', Verdana, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.25em;
+	border-bottom: 1px solid rgb(10,34,57); /* top and bottom boarder only */
+	border-top: 1px solid rgb(10,34,57);
 }
