@@ -10,6 +10,14 @@ html, body {
   padding: .8rem;
 }
 
+.toggle {
+  text-align: right;
+  font-size: 30px;
+  display: none;
+  box-sizing: border-box;
+
+}
+
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -88,6 +96,11 @@ html, body {
   color: #F2D73C;
 }
 
+.fa-code {
+  color: #003366;
+  font-size: 8rem;
+}
+
 .fa-node-js {
   color: #88C349;
 }
@@ -97,20 +110,18 @@ html, body {
   margin: 1rem;
 }
 
-.fa-code {
-  color: #003366;
-  font-size: 10rem;
+form {
+  margin: 0 auto;
 }
 
-.social a {
-  font-size: 4.5rem;
-  padding: 3rem;
+label {
+  padding-top: 1rem;
 }
-
 footer {
   background-color: #cccccc;
   color: #003366;
-  padding-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 hr.light {
@@ -133,12 +144,6 @@ hr.light-100 {
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a {
-    font-size: 3rem;
-    padding: 2rem;
-  }
-  }
 @media (max-width: 768px) {
   .carousel-caption {
     top: 45%;
@@ -178,6 +183,24 @@ hr.light-100 {
     font-size: 250%;
     text-transform: uppercase;
 
+  }
+
+  .toggle{
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    display: none !important;
+  }
+
+  ul li {
+    display: block !important;
+    text-align: center;
+  }
+
+  .active {
+    display: block !important;
   }
 
   .carousel-caption h3 {
