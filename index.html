@@ -1,241 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Adam Donner</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">	<link href="style.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam Donner</title>
+    <!--Using the Bootstrap CSS framework for base stylesheet. https://getbootstrap.com-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <!--Using Font Awesome for icons. https://fontawesome.com--> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">	
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  </head>
 
-<!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-  <div class="container-fluid">
-    <div class="toggle">
-        <i class="fa fa-bars menu" aria-hidden="true"></i>
+  <body>
+
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <div class="toggle"> <!--Humburger menu icon, hidden until viewed on smaller screens-->
+          <i class="fa fa-bars menu" aria-hidden="true"></i>
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contactme">Contact Me</a>
+        </li>
+      </ul>
     </div>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contactme">Contact Me</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
+    </nav>
 
-<!--Hero Section-->
+  <!--Introduction-->
 
-  <div class="hero-image">
-    <img src="img/background.jpg">
-    <div class="carousel-caption">
-        <h1 class="display-2">Hello, I'm <span id="adam">Adam Donner</span></h1>
-        <h1 class="display-2" id="text"></h1>
-        <br>
-  
-        <a href="docs/Resume-AdamDonner.pdf" class="btn btn-primary btn-lg">Resume</a>
-    </div>
-  </div>
-
-
-<!--- Quote -->
-  <div class="container-fluid">
-    <div class="row jumbotron">
-      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-        <h4>"I want to put a ding in the universe." - Steve Jobs</h4>
+    <div class="hero-image" id="home">
+      <img src="img/background.jpg" alt="open apple laptop">
+      <div class="carousel-caption">
+          <h1 class="display-2">Hello, I'm <span id="adam">Adam Donner</span></h1>
+          <h1 class="display-2" id="text"></h1> <!--Div for the typerwriter text-->
+          <br>
+    
+          <a href="docs/Resume-AdamDonner.pdf" class="btn btn-primary btn-lg">Resume</a>
       </div>
     </div>
-  </div>
 
-<!--- About Me -->
-  <div class="container-fluid padding" id="aboutme">
-  <div class="row welcome text-center">
-    <div class="col-12">
-      <h1 class="display-4">Adam Donner</h1>
-      <hr>
+
+  <!--- Quote -->
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <h4>"I want to put a ding in the universe." - Steve Jobs</h4>
+        </div>
+      </div>
+    </div>
+
+  <!--- About Me -->
+    <div class="container-fluid padding" id="aboutme">
+    <div class="row about text-center">
       <div class="col-12">
+        <h1 class="display-4">Adam Donner</h1>
+        <hr>
+        <div class="col-12">
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  <div class="container-fluid padding">
-    <div class="row padding">
-        <div class="col-lg-4">
-            <img src="img/family.jpg" class="img-fluid">
-          </div>
-        <div class="col-md-12 col-lg-8">
-          <h3>Web Developer, Marketing Professional, Product Manager</h3>
-          <p>I have spent the past 15 years of my career in the software industry in both the engineering and sales/marketing divisions.</p>
-          <p> I received my first degree from the University of Nebraska with a Bachelors in Management with an Information Systems focus.</p> 
-          <p>After graduation I started my career as a oftware engineer for a publically traded company that develops hardware devices.</p>
-            <p>I spent four years as an software engineer for that organization before moving into a Regional Manager of both the engineers and software salespeople.</p>
-            <p>I later accepted a position as a Regional Sales Manager at a software company that develops voice and imaging technology.
-            As a Regional Sales Manager I was responsible for a quarter of the US in my vertical market. I was traveling across the country for work
-            every week until my twin boys, Owen and Alexander were born.</p>  
-            <p>After five years I decided to it was time get off the road. I accepted the position of Director of Sales and Marketing for a local company where my team and I were responsible for selling and developing e-commerce sites for key accounts in Nebraska and Iowa. </p>
-            <p>I am currently a student at Bellevue University studying Web Development.</p>
-          <p>I live in Omaha Nebraska with my beautiful wife, twin boys, and golden retriever.
-              In my spare time, I enjoy camping, mountain biking, and hiking.</p>
-        </div>
-
     </div>
-  </div>
-  <div class="container-fluid padding">
-      <div class="row text-center padding">
+    <div class="container-fluid padding">
+      <div class="row padding">
+          <div class="col-lg-4">
+              <img src="img/family.jpg" class="img-fluid" alt="Adam with his wife and twin boys">
+            </div>
+          <div class="col-md-12 col-lg-8">
+            <h3>Web Developer, Marketing Professional, Product Manager</h3>
+            <p>I have spent the past 15 years of my career in the software industry in both the engineering and sales/marketing divisions.</p>
+            <p> I received my first degree from the University of Nebraska with a Bachelors in Management with an Information Systems focus.</p> 
+            <p>After graduation I started my career as a software engineer for a publically traded company that develops hardware devices.</p>
+              <p>I spent four years as an software engineer for that organization before moving into a Regional Manager of both the engineers and software salespeople.</p>
+              <p>I later accepted a position as a Regional Sales Manager at a software company that develops voice and imaging technology.
+              As a Regional Sales Manager I was responsible for a quarter of the US in my vertical market. I was traveling across the country for work
+              every week until my twin boys, Owen and Alexander were born.</p>  
+              <p>After five years I decided to it was time get off the road. I accepted the position of Director of Sales and Marketing for a local company where my team and I were responsible for selling and developing e-commerce sites for key accounts in Nebraska and Iowa. </p>
+              <p>I am currently a student at Bellevue University studying Web Development.</p>
+            <p>I live in Omaha Nebraska with my beautiful wife, twin boys, and golden retriever.
+                In my spare time, I enjoy camping, mountain biking, and hiking.</p>
+          </div>
+
+      </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <i class="fab fa-html5"></i>
+              <h3>HTML5</h3>
+            </div>
           <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <i class="fab fa-html5"></i>
-            <h3>HTML5</h3>
+              <i class="fab fa-css3"></i>
+              <h3>CSS3</h3>
           </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <i class="fab fa-css3"></i>
-            <h3>CSS3</h3>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <i class="fab fa-node-js"></i>
+              <h3>Node.Js</h3>
+          </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <i class="fab fa-js"></i>
-            <h3>JavaScript</h3>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <i class="fab fa-node-js"></i>
-            <h3>Node.Js</h3>
-        </div>
-      </div>
-  </div>
-
-<!--- Portfolio -->
-  <div class="container-fluid padding" id="portfolio">
-  <div class="row welcome text-center">
-    <div class="col-12">
-      <h1 class="display-4">Portfolio</h1>
-    </div>
-    <hr>
-  </div>
-  </div>
-
-  <div class="container-fluid padding">
-  <div class="row padding">
-    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-      <div class="card">
-        <img class="card-img-top" src="img/amytwinspark.jpg">
-        <div class="card-body">
-          <h4 class="card-title">Amy Donner BioSite</h4>
-          <p>This is a bioSite that I created for my lovely wife in my web-200 class.</p>
-          <a href="https://adonner.github.io/bioSite/" class="btn btn-outline-secondary">See Website</a>
-          <a href="https://adonner.github.io/bioSite/biosite-prototype.pdf" class="btn btn-outline-secondary">See Prototype</a>
-        </div>
-      </div>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+  <!--- Portfolio -->
+    <div class="container-fluid padding" id="portfolio">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Portfolio</h1>
+      </div>
+      <hr>
+    </div>
+    </div>
+
+    <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
         <div class="card">
-          <img class="card-img-top" src="img/230-231-repo.png">
+          <img class="card-img-top" src="img/amytwinspark.jpg" alt="Adam's wife Amy with their twin boys">
           <div class="card-body">
-            <h4 class="card-title">Intro to JavaScript</h4>
-            <p>This GitHub repository is all of the work that I put in for my web-230/231.</p>
-            <a href="https://github.com/adonner/web-231" class="btn btn-outline-secondary">GitHub Repository</a>
+            <h4 class="card-title">Amy Donner BioSite</h4>
+            <p>This is a bioSite that I created for my lovely wife in my web-200 class.</p>
+            <a href="https://adonner.github.io/bioSite/" class="btn btn-outline-secondary">See Website</a>
+            <a href="https://adonner.github.io/bioSite/biosite-prototype.pdf" class="btn btn-outline-secondary">See Prototype</a>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <div class="card">
-            <img class="card-img-top" src="img/headshot.png">
+            <img class="card-img-top" src="img/230-231-repo.png" alt="Web 230-231 Octocat GitHub Logo">
             <div class="card-body">
-              <h4 class="card-title">Portfolio Prototype</h4>
-              <p>Here is the initial prototype I created for the development of this website.</p>
-              <a href="https://adonner.github.io/donner-assignment-2.4.pdf" class="btn btn-outline-secondary">See Prototype</a>
+              <h4 class="card-title">Intro to JavaScript</h4>
+              <p>This GitHub repository is all of the work that I put in for my web-230/231.</p>
+              <a href="https://github.com/adonner/web-231" class="btn btn-outline-secondary">GitHub Repository</a>
             </div>
           </div>
         </div>
+
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <div class="card">
-              <img class="card-img-top" src="img/330-repo.png">
+              <img class="card-img-top" src="img/headshot.png" alt="Picture of Adam">
               <div class="card-body">
-                <h4 class="card-title">JavaScript II</h4>
-                <p>This GitHub repository is all of the work that I put in for my web-330.</p>
-                <a href="https://github.com/adonner/web-330" class="btn btn-outline-secondary">GitHub Repository</a>
+                <h4 class="card-title">Portfolio Prototype</h4>
+                <p>Here is the initial prototype I created for the development of this website.</p>
+                <a href="https://adonner.github.io/donner-assignment-2.4.pdf" class="btn btn-outline-secondary">See Prototype</a>
               </div>
             </div>
           </div>
-  </div>
-  </div>
-
-
-
-<!--- Development approach -->
-  <div class="container-fluid padding" id="contactme">
-    <div class="row padding">
-        <div class="col-md-12 col-lg-9">
-          <h2>My Development Approach</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus eros nec enim tempor, vel laoreet 
-            erat scelerisque. Aenean luctus pulvinar aliquet. Nullam cursus dapibus dignissim. In hac habitasse platea 
-            dictumst. Sed purus massa, suscipit id lacus at, tincidunt luctus arcu. Fusce id odio finibus, finibus lacus 
-            in, bibendum quam. Fusce aliquam id urna cursus suscipit. Nam varius tempor cursus. Quisque vel pulvinar purus. 
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          </p>
-          <br>
-        </div>
-        <div class="col-lg-3">
-            <i class="fas fa-code"></i>
-        </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <div class="card">
+                <img class="card-img-top" src="img/330-repo.png" alt="Web 330 Octocat GitHub Logo">
+                <div class="card-body">
+                  <h4 class="card-title">JavaScript II</h4>
+                  <p>This GitHub repository is all of the work that I put in for my web-330.</p>
+                  <a href="https://github.com/adonner/web-330" class="btn btn-outline-secondary">GitHub Repository</a>
+                </div>
+              </div>
+            </div>
+    </div>
     </div>
 
-  </div>
-
-<!--- Footer -->
-<footer class="container-fluid">
-    <form class ="col-md-4" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScopc6rLvIR-ZtzkIt3TU3wX2yCTwuCcNhZ6nGfzoeLesQpsQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-        <label>Name</label>
-          <input type="text" name="entry.1213705281" id="entry.1213705281" class="form-control" required>
-        <label>Email</label>
-        <input type="text" name="entry.1275475597" id="entry.1275475597" class="form-control" required>
-        <label>Message</label>
-        <textarea name="entry.881546209" id="entry.881546209" class="form-control" rows="3" required></textarea>
-        <br>
-        <input type="submit" value="Submit">
-      </form>
-      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-</footer>
 
 
-<script type="text/javascript">
-// This creates the typewrite effect
-  var i=0;
-  text = "I make cool stuff";  //Creates the string to display
+  <!--- Development approach -->
+    <div class="container-fluid padding" id="contactme">
+      <div class="row padding">
+          <div class="col-md-12 col-lg-9">
+            <h2>My Development Approach</h2>
+            <p>I always start my development with a pen and paper, sketching out my ideas.  I feel this is the best way to get your designs perfected, along with allowing you to make changes to your design rather quickly. 
+               With those sketches and some inspirations surrounding me I get a feel for colors and fonts.  These colors and fonts may change slightly through the development process. However, this is an excellent starting point.
+            </p>
+            <p>
+                Once everything is on paper, it is time to get my hands dirty with the development.  My priority is the look and feel of the website first.  Once I am confident in the layout of the website I can add the JavaScript that will provide the full functionality of the website.
+            </p>
+            <p>
+                Before the website can be launched to the public, it is essential the there is a thorough quality check.  I test the website on multiple browsers and multiple screen sizes for mobile browsing.  Doing this, allows me ensure that all of the features work as intended on all browsers.
+                  After the quality check is complete and I am happy with the results, we can launch the website to the public!
+            </p>
+            <br>
+          </div>
+          <div class="col-lg-3">
+              <i class="fas fa-code"></i>
+          </div>
+      </div>
 
-  //This does a check if text is displayed, if not start typewriter.
-  function typing() {
-    if (i<text.length)
-    {
-      document.getElementById("text").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typing,150)
+    </div>
+
+  <!--- Footer -->
+  <footer class="container-fluid">
+    <h1 class="text-center contactme">Contact Me</h1>
+    <hr class="footer">
+    <!--This form is linked to a Google form.  The form will automatically send me an email when a new form is submitted.  Up to 20 emails per day.-->
+      <form class ="col-md-6" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScopc6rLvIR-ZtzkIt3TU3wX2yCTwuCcNhZ6nGfzoeLesQpsQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <input type="text" name="entry.1213705281" id="entry.1213705281" class="form-control" required placeholder="Name">
+            <br>
+          <input type="email" name="entry.1275475597" id="entry.1275475597" class="form-control" required placeholder="Email">
+          <br>
+          <textarea name="entry.881546209" id="entry.881546209" class="form-control" rows="3" required placeholder="Message"></textarea>
+          <br>
+          <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> <!--remove form after submission-->
+    <div class="text-right">
+      <a href="https://www.linkedin.com/in/adam-donner-6a72293a?trk=people-guest_profile-result-card_result-card_full-click"><i class="fab fa-linkedin-in"></i></a> <!--LinkedIn icon and link to personal account.-->
+    </div>
+  </footer>
+
+
+  <script type="text/javascript">
+  // This creates the typewrite effect
+    var i=0;
+    text = "I make cool stuff";  //Creates the string to display
+
+    //This does a check if text is displayed, if not start typewriter.
+    function typing() {
+      if (i<text.length)
+      {
+        document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typing,125)
+      }
     }
-  }
 
-  typing();
+    typing();
 
-
-  $(document).ready(function(){
-    $(".menu").click(function(){
-      $("ul").toggleClass("active");
-      
+    // This allows for the use of a hamburger menu when the website is viewed on small screens
+    $(document).ready(function(){
+      $(".menu").click(function(){
+        $("ul").toggleClass("active");
+        
+      })
     })
-  })
 
-  $('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been received');
-  });
+    // This displays confirmation to the user when the gmail form has been sumbitted.
+    $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(2000);
+    $('#gform').prepend('Thank you for your interest, I look forward to connecting with!');
+    });
 
-  </script>
+    </script>
 
-</body>
+  </body>
 </html>
