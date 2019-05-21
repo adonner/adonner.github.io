@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adam Donner</title>
     <!--Using the Bootstrap CSS framework for base stylesheet. https://getbootstrap.com-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-    <!--Using Font Awesome for icons. https://fontawesome.com--> 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Using Font Awesome for icons. https://fontawesome.com-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="styles/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -20,7 +19,7 @@
       <div class="toggle"> <!--Humburger menu icon, hidden until viewed on smaller screens-->
           <i class="fa fa-bars menu" aria-hidden="true"></i>
       </div>
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto" id="list">
         <li class="nav-item active">
           <a class="nav-link" href="#home">Home</a>
         </li>
@@ -45,11 +44,10 @@
           <h1 class="display-2">Hello, I'm <span id="adam">Adam Donner</span></h1>
           <h1 class="display-2" id="text"></h1> <!--Div for the typerwriter text-->
           <br>
-    
+
           <a href="docs/Resume-AdamDonner.pdf" class="btn btn-primary btn-lg">Resume</a>
       </div>
     </div>
-
 
   <!--- Quote -->
     <div class="container-fluid">
@@ -79,20 +77,20 @@
           <div class="col-md-12 col-lg-8">
             <h3>Web Developer, Marketing Professional, Product Manager</h3>
             <p>I have spent the past 15 years of my career in the software industry in both the engineering and sales/marketing divisions.</p>
-            <p> I received my first degree from the University of Nebraska with a Bachelors in Management with an Information Systems focus.</p> 
+            <p> I received my first degree from the University of Nebraska with a Bachelors in Management with an Information Systems focus.</p>
             <p>After graduation I started my career as a software engineer for a publically traded company that develops hardware devices.</p>
               <p>I spent four years as an software engineer for that organization before moving into a Regional Manager of both the engineers and software salespeople.</p>
               <p>I later accepted a position as a Regional Sales Manager at a software company that develops voice and imaging technology.
               As a Regional Sales Manager I was responsible for a quarter of the US in my vertical market. I was traveling across the country for work
-              every week until my twin boys, Owen and Alexander were born.</p>  
+              every week until my twin boys, Owen and Alexander were born.</p>
               <p>After five years I decided to it was time get off the road. I accepted the position of Director of Sales and Marketing for a local company where my team and I were responsible for selling and developing e-commerce sites for key accounts in Nebraska and Iowa. </p>
               <p>I am currently a student at Bellevue University studying Web Development.</p>
             <p>I live in Omaha Nebraska with my beautiful wife, twin boys, and golden retriever.
                 In my spare time, I enjoy camping, mountain biking, and hiking.</p>
           </div>
-
       </div>
     </div>
+
     <div class="container-fluid padding">
         <div class="row text-center padding">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -179,7 +177,7 @@
       <div class="row padding">
           <div class="col-md-12 col-lg-9">
             <h2>My Development Approach</h2>
-            <p>I always start my development with a pen and paper, sketching out my ideas.  I feel this is the best way to get your designs perfected, along with allowing you to make changes to your design rather quickly. 
+            <p>I always start my development with a pen and paper, sketching out my ideas.  I feel this is the best way to get your designs perfected, along with allowing you to make changes to your design rather quickly.
                With those sketches and some inspirations surrounding me I get a feel for colors and fonts.  These colors and fonts may change slightly through the development process. However, this is an excellent starting point.
             </p>
             <p>
@@ -214,43 +212,30 @@
         </form>
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> <!--remove form after submission-->
     <div class="text-right">
-      <a href="https://www.linkedin.com/in/adam-donner-6a72293a?trk=people-guest_profile-result-card_result-card_full-click"><i class="fab fa-linkedin-in"></i></a> <!--LinkedIn icon and link to personal account.-->
+      <a href="https://www.linkedin.com/in/adam-donner-6a72293a?trk=people-guest_profile-result-card_result-card_full-click"><i class="fab fa-linkedin"></i></a> <!--LinkedIn icon and link to personal account.-->
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+ <script src="scripts/scripts.js"></script>
 
-  <script type="text/javascript">
-  // This creates the typewrite effect
-    var i=0;
-    text = "I make cool stuff";  //Creates the string to display
-
-    //This does a check if text is displayed, if not start typewriter.
-    function typing() {
-      if (i<text.length)
-      {
-        document.getElementById("text").innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typing,125)
-      }
-    }
-
+ <script type="text/javascript">
+   $(document).ready(function(){
+    // This calls the typing function onload.
     typing();
 
-    // This allows for the use of a hamburger menu when the website is viewed on small screens
-    $(document).ready(function(){
-      $(".menu").click(function(){
-        $("ul").toggleClass("active");
-        
-      })
-    })
+     // This allows for the use of a hamburger menu when the website is viewed on small screens
+     $(".menu").click(function(){
+       $("ul").toggleClass("active");
+     });
 
-    // This displays confirmation to the user when the gmail form has been sumbitted.
-    $('#gform').on('submit', function(e) {
-    $('#gform *').fadeOut(2000);
-    $('#gform').prepend('Thank you for your interest, I look forward to connecting with!');
-    });
+     // This displays confirmation to the user when the gmail form has been submitted and fades the form out.
+     $('#gform').on('submit', function(e) {
+       $('#gform *').fadeOut(2000);
+       $('#gform').prepend('Thank you for your interest, I look forward to connecting with!');
+     });
 
-    </script>
-
+   });
+ </script>
   </body>
 </html>

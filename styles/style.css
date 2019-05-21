@@ -101,8 +101,9 @@ html, body {
   color: #88C349;
 }
 
-.fa-linkedin-in {
-  font-size: 1.25rem;
+.fa-linkedin {
+  font-size: 2.5rem;
+  padding: 1.5rem;
 }
 
 .fa-html5, .fa-js, .fa-css3, .fa-node-js {
