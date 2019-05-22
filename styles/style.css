@@ -9,7 +9,7 @@ html, body {
 
 .toggle {
   text-align: right;
-  font-size: 30px;
+  font-size: 1.875rem;
   display: none;
   box-sizing: border-box;
 
@@ -101,11 +101,6 @@ html, body {
   color: #88C349;
 }
 
-.fa-linkedin {
-  font-size: 2.5rem;
-  padding: 1.5rem;
-}
-
 .fa-html5, .fa-js, .fa-css3, .fa-node-js {
   font-size: 4rem;
   margin: 1rem;
@@ -141,6 +136,10 @@ footer a:hover {
   color: #4f6d7a;
 }
 
+.social {
+  font-size: 2rem;
+  padding-right: 10px;
+}
 
 /*---Media Queries --*/
 @media (max-width: 768px) {
@@ -154,12 +153,6 @@ footer a:hover {
 
   }
 
-  .carousel-caption h3 {
-    font-size: 140%;
-    font-weight: 400;
-    padding-bottom: .2rem;
-
-  }
    .carousel-caption .btn {
      font-size: 95%;
      padding: 8px 14px;
@@ -197,12 +190,6 @@ footer a:hover {
 
   .active {
     display: block !important;
-  }
-
-  .carousel-caption h3 {
-    font-size: 141%;
-    font-weight: 400;
-    padding-bottom: .2rem;
   }
 
    .carousel-caption .btn {
