@@ -217,48 +217,48 @@
     </div>
 
   <!--- Footer -->
-  <footer class="container-fluid">
-    <h1 class="text-center contactme">Contact Me</h1>
-    <hr class="footer">
-    <!--This form is linked to a Google form.  The form will automatically send me an email when a new form is submitted.  Up to 20 emails per day.-->
-      <form class ="col-md-6" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScopc6rLvIR-ZtzkIt3TU3wX2yCTwuCcNhZ6nGfzoeLesQpsQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-            <input type="text" name="entry.1213705281" id="entry.1213705281" class="form-control" required placeholder="Name">
-            <br>
-          <input type="email" name="entry.1275475597" id="entry.1275475597" class="form-control" required placeholder="Email">
-          <br>
-          <textarea name="entry.881546209" id="entry.881546209" class="form-control" rows="3" required placeholder="Message"></textarea>
-          <br>
-          <input class="btn btn-primary btn-sm" type="submit" value="Submit">
-        </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-  <!--LinkedIn icon and link to personal account.-->
-    <div class="text-right social">
-      <a href="https://www.linkedin.com/in/adam-donner-6a72293a?trk=people-guest_profile-result-card_result-card_full-click"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/adonner"><i class="fab fa-github-square"></i></a>
-      <a href="https://twitter.com/adamdonner"><i class="fab fa-twitter-square"></i></a>
-    </div>
-  </footer>
+      <footer class="container-fluid">
+        <h1 class="text-center contactme">Contact Me</h1>
+        <hr class="footer">
+        <!--This form is linked to a Google form.  The form will automatically send me an email when a new form is submitted.  Up to 20 emails per day.-->
+          <form class ="col-md-6" name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScopc6rLvIR-ZtzkIt3TU3wX2yCTwuCcNhZ6nGfzoeLesQpsQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                <input type="text" name="entry.1213705281" id="entry.1213705281" class="form-control" required placeholder="Name">
+                <br>
+              <input type="email" name="entry.1275475597" id="entry.1275475597" class="form-control" required placeholder="Email">
+              <br>
+              <textarea name="entry.881546209" id="entry.881546209" class="form-control" rows="3" required placeholder="Message"></textarea>
+              <br>
+              <input class="btn btn-primary btn-sm" type="submit" value="Submit">
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      <!--LinkedIn icon and link to personal account.-->
+        <div class="text-right social">
+          <a href="https://www.linkedin.com/in/adam-donner-6a72293a?trk=people-guest_profile-result-card_result-card_full-click"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/adonner"><i class="fab fa-github-square"></i></a>
+          <a href="https://twitter.com/adamdonner"><i class="fab fa-twitter-square"></i></a>
+        </div>
+      </footer>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
- <script src="scripts/scripts.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="scripts/scripts.js"></script>
 
- <script type="text/javascript">
-   $(document).ready(function(){
-    // This calls the typing function onload.
-    typing();
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // This calls the typing function onload.
+        typing();
 
-     // This allows for the use of a hamburger menu when the website is viewed on small screens
-     $(".menu").click(function(){
-       $("ul").toggleClass("active");
-     });
+        // This allows for the use of a hamburger menu when the website is viewed on small screens
+        $(".menu").click(function(){
+          $("ul").toggleClass("active");
+        });
 
-     // This displays confirmation to the user when the gmail form has been submitted and fades the form out.
-     $('#gform').on('submit', function(e) {
-       $('#gform *').fadeOut(2000);
-       $('#gform').prepend('Thank you for your interest, I look forward to connecting with you!');
-     });
+        // This displays confirmation to the user when the gmail form has been submitted and fades the form out.
+        $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut(2000);
+          $('#gform').prepend('Thank you for your interest, I look forward to connecting with you!');
+        });
 
-   });
- </script>
+      });
+    </script>
   </body>
 </html>
