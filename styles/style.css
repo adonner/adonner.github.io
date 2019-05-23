@@ -7,6 +7,7 @@ html, body {
   color: #222;
 }
 
+/* Format hamburger toggle menu */
 .toggle {
   text-align: right;
   font-size: 1.875rem;
@@ -15,6 +16,7 @@ html, body {
 
 }
 
+/* Navigation Section */
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -23,6 +25,7 @@ html, body {
   font-size: 1.1em !important;
 }
 
+/* Hero Image and text */
 .hero-image img {
   width: 100%;
   height: 100%;
@@ -48,6 +51,7 @@ html, body {
   color: #ffb511;
 }
 
+/* Button formatting */
 .btn-primary {
   background-color: #4f6d7a;
   border: 1px solid #4f6d7a;
@@ -67,19 +71,7 @@ html, body {
   padding-bottom: 2rem;
 }
 
-.about {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 2rem;
-}
-
-.about hr {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: .3rem;
-  margin-bottom: 1rem;
-}
-
+/* Developer Icons */
 .fa-html5 {
   color: #E34C26;
 }
@@ -106,14 +98,7 @@ html, body {
   margin: 1rem;
 }
 
-form {
-  margin: 0 auto;
-}
-
-label {
-  padding-top: 1rem;
-}
-
+/* Footer Section */
 footer {
   background-color: #cccccc;
   color: #003366;
@@ -127,7 +112,6 @@ hr.footer {
   margin-top: 1rem;
 }
 
-
 footer a {
   color: #4f6d7a;
 }
@@ -136,6 +120,11 @@ footer a:hover {
   color: #4f6d7a;
 }
 
+form {
+  margin: 0 auto;
+}
+
+/* Formats social icons */
 .social {
   font-size: 2rem;
   padding-right: 10px;

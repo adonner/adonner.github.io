@@ -1,3 +1,15 @@
+/*
+============================================
+; Title: scripts.js
+; Author: Adam Donner
+; Date: 19 May 2019
+; Description: Houses JavaScripts for Portfolio
+; Website
+;===========================================
+*/
+
+
+
 // This creates the typewrite effect
 var index = 0;
 var text = "I make cool stuff";  //Creates the string to display
