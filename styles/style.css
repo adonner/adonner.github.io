@@ -100,7 +100,23 @@ html, body {
   color: #88C349;
 }
 
-.fa-html5, .fa-js, .fa-css3, .fa-node-js {
+.fa-angular {
+  color: #DE0031;
+}
+
+.fa-database {
+  color: #599643;
+}
+
+.fa-cogs {
+  color: #88C349;
+}
+
+.fa-js-square{
+  color: #1A76D2;
+}
+
+.fa-html5, .fa-js, .fa-css3, .fa-node-js, .fa-angular, .fa-database, .fa-js-square, .fa-cogs {
   font-size: 4rem;
   margin: 1rem;
 }
